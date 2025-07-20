@@ -8,8 +8,9 @@ module.exports = async (req, res) => {
   if (req.method === 'GET' && req.url === '/health') {
     return res.status(200).json({ status: 'ok', message: 'n8n MCP server is running' });
   }
+
   
-  // For now, return a basic response
+  // For now, return a basic response ...
   // Full MCP implementation may need WebSocket support
   res.status(200).json({ 
     message: 'n8n MCP Server', 
